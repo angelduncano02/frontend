@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "frontend application using electron with integration of OpenAI API and supabase.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelduncano02/frontend.git"
+  },
+  "author": "Angel Duncano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelduncano02/frontend/issues"
+  },
+  "homepage": "https://github.com/angelduncano02/frontend#readme",
+  "devDependencies": {
+    "electron": "^24.3.1"
+  }
+}
