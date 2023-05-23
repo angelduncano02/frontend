@@ -46,7 +46,8 @@ app.on("window-all-closed", () => {
 async function openAI(event, sentence){
   let result = null;
 
-  const env = dotenv.parsed;
+  const env = dotenv.parsed
+
   await axios({
      method: 'post',
      url: 'https://api.openai.com/v1/completions',
@@ -61,7 +62,7 @@ async function openAI(event, sentence){
      },
      headers: {
        'Content-Type': 'application/json',
-       'Authorization': 'Bearer' + env.APIKEY_OPENAPI
+       'Authorization': 'Bearer ' + env.APIKEY_OPENAI,
      }
    }).then(function (response) {
      result = response.data;
